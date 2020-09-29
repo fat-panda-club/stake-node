@@ -16,7 +16,7 @@ Run $stakenode command in DM or any channel with panda-bot present
 
 ## Set up stake node 
 
-Set up your blockchain node on the same or an alternate VPS 
+Set up your blockchain node for staking, THIS CAN NOT BE THE TIP NODE!
 This wallet should only be used for panda-bot staking (explorers are fine, as there are no existing blockchain transactions)
 Keep this node updated and DO NOT make transactions manually
 
