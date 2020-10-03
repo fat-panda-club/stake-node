@@ -5,6 +5,7 @@ Requires python3.7+ with pip
 ## Task summary
 
 Assuming tip-node has already been set up, the process for stake-node is almost identical.
+However it must be configured on a different node - the tip wallet should never be used for staking.
 
 ## For Discord: create a stake notification channel channel
 
