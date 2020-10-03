@@ -4,7 +4,7 @@
 ### These are common params and should exist if you have set up tip node
 # Audit bot token, can be the same for tip and stake
 # Do not share this with anyone!
-export PANDA_BOT_TOKEN=''
+export PANDA_AUDIT_TOKEN=''
 # This is the currency which you received API key for
 # eg. BOO
 export PANDA_CURRENCY = ''
