@@ -26,24 +26,27 @@ Keep this node updated and DO NOT make transactions manually
 cd ~
 git clone https://github.com/fat-panda-club/stake-node.git
 cd stake-node
+vi panda
+mv panda ~/.panda
 sudo apt-get install python3-pip -y
 sudo apt-get install python3-setuptools -y
 python3 -m pip install -r requirements.txt
-vi stake.py
+source ~/.panda
+python3 panda_stake_node.py
 ```
 
-Insert values as follows:
+Values in ~/.panda file as follows:
 
 | Attribute  | Description |
 | ------------- | ------------- |
-| BOT_TOKEN | The bot token you have used in tip-node
-| CURRENCY_TICKER  | The ticker of your currency registered on panda-bot  |
+| PANDA_AUDIT_TOKEN | The bot token you have used in tip-node
+| PANDA_CURRENCY  | The ticker of your currency registered on panda-bot  |
 | PANDA_AUDIT_CHANNEL | This is the SAME as tip node audit channel |
-| FAT_PANDA_CLUB_API_KEY  | panda-bot API key which you can obtain with $tipnode  |
-| STAKE_NODE_HOST | IP of the stake node |
-| STAKE_NODE_PORT | Port number of the stake node |
-| STAKE_NODE_RPC_USERNAME | RPC User of the stake node |
-| STAKE_NODE_RPC_PASSWORD | RPC Password of the stake node |
+| PANDA_API_KEY  | panda-bot API key which you can obtain with $tipnode  |
+| PANDA_STAKE_HOST | IP of the stake node |
+| PANDA_STAKE_PORT | Port number of the stake node |
+| PANDA_STAKE_USERNAME | RPC User of the stake node |
+| PANDA_STAKE_PASSWORD | RPC Password of the stake node |
 
 
 The RPC settings are generally set in the daemon config similarly to below:
