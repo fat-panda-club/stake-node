@@ -8,23 +8,24 @@ import random
 import sys
 import traceback
 from math import isclose
+import os
 
 # This should be the same as tip node BOT_TOEKN!
 # Do not share this with anyone!
-BOT_TOKEN = ""
+BOT_TOKEN = os.environ["PANDA_AUDIT_TOKEN"]
 # This is the currency which you received API key for
-CURRENCY_TICKER = "" # eg. BOO
+CURRENCY_TICKER = os.environ["PANDA_CURRENCY"] # eg. BOO
 # Run $stakeonode to retrieve the API key, you must be admin of the project
-FAT_PANDA_CLUB_API_KEY = ""
+FAT_PANDA_CLUB_API_KEY = os.environ["PANDA_API_KEY"]
 # This is the panda-bot audit channel for logging all transactions
-PANDA_AUDIT_CHANNEL = 0
+PANDA_AUDIT_CHANNEL = os.environ["PANDA_AUDIT_CHANNEL"]
 # IP of target node, 127.0.0.1 for localhost
-STAKE_NODE_HOST = ""
+STAKE_NODE_HOST = os.environ["PANDA_STAKE_HOST"]
 # Port of stake node
-STAKE_NODE_PORT = ""
+STAKE_NODE_PORT = os.environ["PANDA_STAKE_PORT"]
 # Provide RPC credentials
-STAKE_NODE_RPC_USERNAME = ""
-STAKE_NODE_RPC_PASSWORD = ""
+STAKE_NODE_RPC_USERNAME = os.environ["PANDA_STAKE_USERNAME"]
+STAKE_NODE_RPC_PASSWORD = os.environ["PANDA_STAKE_PASSWORD"]
 
 
 AUDIT_MESSAGE_REGEX = r"^\<\ ([a-z0-9]{3,7}\-\d+)\ \>.*\ unstaked\ ([0-9]+\.[0-9]+?)\ via.*\ to\ ([a-zA-Z0-9]+?)\!$"
